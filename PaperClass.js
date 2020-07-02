@@ -2,7 +2,7 @@ class Paper {
     constructor(x, y,radius) {
       var options = {
           isStatic : false,
-          restitution : 1.0,
+          restitution : 0.3,
            friction : 0.5,
           density : 1.2
       }
@@ -19,7 +19,7 @@ class Paper {
       ellipseMode(CENTER);
       strokeWeight(4);
       noStroke();
-      fill("red");
+      fill("blue");
       circle(0, 0, this.radius);
       pop();
     }
